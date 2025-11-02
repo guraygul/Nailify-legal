@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Nailify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFE5F0 0%, #FFF5F8 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 20, 147, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #FFB6C1;
+        }
+        
+        h1 {
+            color: #FF1493;
+            font-size: 3em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .emoji {
+            font-size: 1em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        
+        h2 {
+            color: #FF1493;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFE5F0;
+        }
+        
+        h3 {
+            color: #C71585;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #FFE5F0 0%, #FFF0F5 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 5px solid #FF1493;
+        }
+        
+        .contact-box h2 {
+            margin-top: 0;
+            border: none;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            margin: 15px 0;
+            transition: transform 0.2s;
+        }
+        
+        .contact-method:hover {
+            transform: translateX(5px);
+        }
+        
+        .contact-icon {
+            font-size: 2em;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #C71585;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-value {
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        a {
+            color: #FF1493;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .faq-item {
+            background: #FAFAFA;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #FFB6C1;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #C71585;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #FFF9FC;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #FFE5F0;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: #FF69B4;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(255, 20, 147, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #C71585;
+            margin-bottom: 10px;
+        }
+        
+        .feature-description {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .warning-box {
+            background: #FFF4E6;
+            border-left: 5px solid #FF8C00;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .warning-box p {
+            color: #333;
+            margin: 0;
+        }
+        
+        .tip-box {
+            background: #E6F7FF;
+            border-left: 5px solid #1890FF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .tip-box strong {
+            color: #0066CC;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #FFE5F0;
+            color: #999;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="emoji">💅</span> Nailify Support</h1>
+            <p class="subtitle">We're here to help you get the most out of your nail care journey!</p>
+        </header>
+
+        <div class="contact-box">
+            <h2>📧 Contact Us</h2>
+            <p>Have a question or need assistance? We'd love to hear from you!</p>
+            
+            <div class="contact-method">
+                <span class="contact-icon">✉️</span>
+                <div class="contact-info">
+                    <div class="contact-label">Email Support</div>
+                    <div class="contact-value"><a href="mailto:nailifyteam@gmail.com">nailifyteam@gmail.com</a></div>
+                </div>
+            </div>
+            
+            <div class="contact-method">
+                <span class="contact-icon">⏱️</span>
+                <div class="contact-info">
+                    <div class="contact-label">Response Time</div>
+                    <div class="contact-value">Within 24-48 hours</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>🎯 What We Can Help With</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <div class="feature-title">Technical Issues</div>
+                <div class="feature-description">App crashes, bugs, or performance problems</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <div class="feature-title">Photo Analysis</div>
+                <div class="feature-description">Questions about nail health analysis results</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-title">Virtual Try-On</div>
+                <div class="feature-description">Help with applying nail designs</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <div class="feature-title">Subscriptions</div>
+                <div class="feature-description">Billing, refunds, and account management</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <div class="feature-title">Feature Requests</div>
+                <div class="feature-description">Suggestions for new features</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <div class="feature-title">Privacy & Security</div>
+                <div class="feature-description">Data privacy and account security</div>
+            </div>
+        </div>
+
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How does the nail health analysis work?</div>
+            <div class="faq-answer">
+                Nailify uses advanced AI technology (GPT-4.1 Mini) to analyze photos of your nails. The AI examines factors like color, texture, shape, and overall condition to provide a health score (0-100) and personalized care recommendations. Simply take a clear photo of your nails in good lighting for the best results.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why isn't my nail analysis accurate?</div>
+            <div class="faq-answer">
+                For best results: 1) Take photos in natural, bright lighting, 2) Ensure your nails are clean and visible, 3) Keep the camera steady and focused, 4) Avoid filters or heavy editing. Remember, this is an AI tool for guidance only—consult a healthcare professional for medical concerns.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I use the virtual nail try-on feature?</div>
+            <div class="faq-answer">
+                1) Take or upload a photo of your hands with visible nails, 2) Choose a nail design from our library or upload your own custom design, 3) Wait a few seconds while our AI applies the design to your photo, 4) Save or share your result! Make sure your hands are well-lit and in focus.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are my photos stored securely?</div>
+            <div class="faq-answer">
+                Yes! All photos are encrypted and stored securely in Firebase Firestore with industry-standard security. Your photos are private and only accessible by you. We never share your photos with third parties without your consent. You can delete your photos anytime from the app.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I delete my photos or account?</div>
+            <div class="faq-answer">
+                To delete individual photos: Go to All Photos → Select X icon to Delete. To delete all data and your account: Go to Settings → Account → Delete Account. Note: This action is permanent and cannot be undone.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What do I do if the app crashes or won't load?</div>
+            <div class="faq-answer">
+                Try these steps: 1) Force close the app and reopen it, 2) Restart your device, 3) Check for app updates in the App Store, 4) Ensure you have a stable internet connection, 5) Free up storage space on your device. If the problem persists, contact us at support@nailify.app with your device model and iOS version.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why am I getting a "rate limit" error?</div>
+            <div class="faq-answer">
+                To ensure fair usage for all users, we limit the number of AI requests per hour/day. If you see this message, please wait a bit before trying again. Premium subscribers have higher limits. This helps us maintain service quality and control costs.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do subscriptions work?</div>
+            <div class="faq-answer">
+                Subscriptions are managed through Apple's In-App Purchase system and automatically renew unless canceled 24 hours before the renewal date. You can manage subscriptions in Settings → [Your Name] → Subscriptions. All billing is handled by Apple, not Nailify.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I request a refund?</div>
+            <div class="faq-answer">
+                Refunds are processed by Apple, not Nailify. To request a refund: 1) Go to reportaproblem.apple.com, 2) Sign in with your Apple ID, 3) Find your Nailify purchase, 4) Select "Request a Refund" and choose a reason. Refund policies are determined by Apple.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What's the daily streak feature?</div>
+            <div class="faq-answer">
+                Your streak tracks consecutive days you open the app and engage with your nail care routine. Opening the app each day maintains your streak. If you miss a day, your streak resets to 1. Enable notifications to receive daily reminders!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I upload custom nail designs?</div>
+            <div class="faq-answer">
+                Yes! When using the virtual try-on feature, you can upload your own nail design photos or inspiration images. Our AI will analyze the design and apply it to your hand photo. For best results, use clear images of nail designs with good lighting.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why are notifications not working?</div>
+            <div class="faq-answer">
+                Check: 1) Settings → Nailify → Notifications is enabled, 2) Your device has "Do Not Disturb" turned off, 3) You haven't disabled notifications within the Nailify app. Go to Nailify Settings → Notifications to re-enable streak reminders.
+            </div>
+        </div>
+
+        <h2>🔧 Troubleshooting Guide</h2>
+
+        <h3>App Won't Open or Keeps Crashing</h3>
+        <ul>
+            <li>Force quit the app and reopen it</li>
+            <li>Restart your iPhone or iPad</li>
+            <li>Update to the latest version of Nailify from the App Store</li>
+            <li>Update your iOS to the latest version</li>
+            <li>Check if you have at least 500MB of free storage</li>
+            <li>Reinstall the app (note: this may delete local data)</li>
+        </ul>
+
+        <h3>AI Analysis Taking Too Long or Failing</h3>
+        <ul>
+            <li>Check your internet connection (Wi-Fi recommended)</li>
+            <li>Try taking a new photo with better lighting</li>
+            <li>Ensure the photo is under 10MB in size</li>
+            <li>Close other apps to free up memory</li>
+            <li>Wait a few minutes if you've hit the rate limit</li>
+        </ul>
+
+        <h3>Photo Upload Issues</h3>
+        <ul>
+            <li>Grant Nailify permission to access your Photos (Settings → Privacy → Photos)</li>
+            <li>Check if the photo is in a supported format (JPEG, PNG, HEIC)</li>
+            <li>Try taking a new photo with the in-app camera</li>
+            <li>Ensure you have a stable internet connection</li>
+        </ul>
+
+        <h3>Camera Not Working</h3>
+        <ul>
+            <li>Grant Nailify camera permission (Settings → Privacy → Camera)</li>
+            <li>Check if another app is using the camera</li>
+            <li>Restart your device</li>
+            <li>Try using a photo from your library instead</li>
+        </ul>
+
+        <div class="warning-box">
+            <p><strong>⚠️ Medical Disclaimer:</strong> Nailify is not a medical device and does not provide medical advice. The nail health analysis is for informational purposes only. Always consult a healthcare professional for medical concerns about your nails or skin.</p>
+        </div>
+
+        <h2>💬 Feedback & Feature Requests</h2>
+        <p>We love hearing from our users! Your feedback helps us improve Nailify. If you have:</p>
+        <ul>
+            <li><strong>Feature requests:</strong> Tell us what you'd like to see in future updates</li>
+            <li><strong>Bug reports:</strong> Help us fix issues by providing detailed information</li>
+            <li><strong>Design feedback:</strong> Share your thoughts on the app's look and feel</li>
+            <li><strong>General suggestions:</strong> We're all ears for ways to make Nailify better</li>
+        </ul>
+        <p>Email us at <a href="mailto:support@nailify.app">support@nailify.app</a> with your ideas!</p>
+
+        <div class="tip-box">
+            <p><strong>💡 Pro Tip:</strong> When reporting a bug, include your device model, iOS version, and steps to reproduce the issue. Screenshots or screen recordings are super helpful!</p>
+        </div>
+
+        <h2>🌟 Leave a Review</h2>
+        <p>Enjoying Nailify? We'd love if you could leave us a review on the App Store! Your reviews help other users discover Nailify and motivate us to keep improving.</p>
+        <p style="text-align: center; margin-top: 25px;">
+            <a href="https://apps.apple.com/app/6754559788" class="button">Rate Nailify ⭐️</a>
+        </p>
+
+        <h2>📚 Additional Resources</h2>
+        <p>
+            <a href="https://guraygul.github.io/Nailify-legal/privacy.html" class="button">Privacy Policy</a>
+            <a href="https://guraygul.github.io/Nailify-legal/terms.html" class="button">Terms of Service</a>
+        </p>
+
+        <h2>🌐 System Requirements</h2>
+        <ul>
+            <li><strong>iOS Version:</strong> iOS 17.0 or later</li>
+            <li><strong>Device:</strong> iPhone</li>
+            <li><strong>Storage:</strong> At least 100MB free space</li>
+            <li><strong>Internet:</strong> Required for AI features</li>
+            <li><strong>Camera:</strong> Required for photo capture</li>
+            <li><strong>Photos Permission:</strong> Required for gallery access</li>
+        </ul>
+
+        <footer>
+            <p><strong>Nailify Support</strong></p>
+            <p>Email: <a href="mailto:nailifyteam@gmail.com">nailifyteam@gmail.com</a></p>
+            <p>We typically respond within 24-48 hours</p>
+            <p style="margin-top: 20px; color: #BBB;">© 2025 Nailify. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
