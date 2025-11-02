@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nailify</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF69B4;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #FF1493;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FFB6C1;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #C71585;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background: #FFF0F5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        strong {
+            color: #C71585;
+        }
+        a {
+            color: #FF1493;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: November 2, 2025</p>
+
+        <p>Welcome to <strong>Nailify</strong>! This Privacy Policy explains how we collect, use, store, and protect your information when you use our mobile application. By using Nailify, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>1.1 Information You Provide to Us</h3>
+        <ul>
+            <li><strong>Photos:</strong> When you use our nail analysis and try-on features, you provide photos of your nails and hands. These photos are processed by our AI systems and stored in our secure cloud database (Firebase Firestore).</li>
+            <li><strong>User Account Information:</strong> We use Firebase Anonymous Authentication to create a unique identifier for you. No email, name, or personal details are required to use Nailify.</li>
+        </ul>
+
+        <h3>1.2 Information We Collect Automatically</h3>
+        <ul>
+            <li><strong>Usage Analytics:</strong> We collect anonymous usage data through Firebase Analytics, including app opens, feature usage, screen views, and interaction patterns to improve our services.</li>
+            <li><strong>Device Information:</strong> We collect device type, operating system version, app version, and device identifiers for troubleshooting and analytics purposes.</li>
+            <li><strong>Performance Data:</strong> Firebase Performance Monitoring collects data about app performance, load times, and network requests to help us optimize the app.</li>
+            <li><strong>Crash Reports:</strong> Firebase Crashlytics automatically collects crash reports and diagnostic information when the app experiences technical issues.</li>
+            <li><strong>Push Notification Tokens:</strong> If you enable notifications, we collect your device token to send you streak reminders and app updates.</li>
+            <li><strong>Streak Data:</strong> We store your login streak information locally on your device using SwiftData.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>Provide Core Services:</strong> Process your photos through AI to analyze nail health and apply virtual nail designs.</li>
+            <li><strong>Store Your Photos:</strong> Save your nail photos securely in Firebase Firestore so you can access your history.</li>
+            <li><strong>Improve Our Services:</strong> Analyze usage patterns to enhance features and user experience.</li>
+            <li><strong>Send Notifications:</strong> Deliver streak reminders and important app updates (only if you opt-in).</li>
+            <li><strong>Technical Support:</strong> Diagnose and fix technical issues using crash reports and performance data.</li>
+            <li><strong>App Security:</strong> Use Firebase App Check to verify legitimate app requests and prevent abuse.</li>
+            <li><strong>Payment Processing:</strong> Process subscription payments through Supabase and Apple's In-App Purchase system (when applicable).</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+
+        <p>Nailify uses the following third-party services that may collect information:</p>
+
+        <h3>3.1 Firebase (Google)</h3>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> Anonymous user authentication</li>
+            <li><strong>Cloud Firestore:</strong> Secure storage of your photos and data</li>
+            <li><strong>Firebase Analytics:</strong> App usage analytics</li>
+            <li><strong>Firebase Crashlytics:</strong> Crash reporting and diagnostics</li>
+            <li><strong>Firebase Performance:</strong> App performance monitoring</li>
+            <li><strong>Firebase Cloud Messaging:</strong> Push notifications</li>
+            <li><strong>Firebase Remote Config:</strong> Dynamic app configuration</li>
+            <li><strong>Firebase App Check:</strong> Security and abuse prevention</li>
+        </ul>
+        <p>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+        <h3>3.2 OpenRouter</h3>
+        <p>We use OpenRouter's AI models (GPT-4.1 Mini) to analyze nail health from your photos. Your photos are sent to OpenRouter's servers for processing but are not stored permanently by OpenRouter.</p>
+        <p>OpenRouter Privacy Policy: <a href="https://openrouter.ai/privacy" target="_blank">https://openrouter.ai/privacy</a></p>
+
+        <h3>3.3 fal.ai</h3>
+        <p>We use fal.ai's Seedream AI service to apply virtual nail designs to your photos. Your photos are processed through their API but are not retained after processing.</p>
+        <p>fal.ai Privacy Policy: <a href="https://fal.ai/privacy" target="_blank">https://fal.ai/privacy</a></p>
+
+        <h3>3.4 Supabase</h3>
+        <p>We use Supabase for subscription and payment management. Payment information is processed securely through Apple's In-App Purchase system. Supabase stores subscription status and user entitlements.</p>
+        <p>Supabase Privacy Policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></p>
+
+        <h2>4. Data Storage and Security</h2>
+
+        <h3>4.1 Where We Store Your Data</h3>
+        <ul>
+            <li><strong>Cloud Storage:</strong> Your photos and analysis results are stored in Firebase Firestore (Google Cloud infrastructure) with encryption at rest and in transit.</li>
+            <li><strong>Local Storage:</strong> Streak data and app preferences are stored locally on your device using SwiftData.</li>
+        </ul>
+
+        <h3>4.2 Security Measures</h3>
+        <ul>
+            <li>All data transmitted between your device and our servers is encrypted using industry-standard HTTPS/TLS protocols.</li>
+            <li>We use Firebase App Check to verify that API requests come from legitimate instances of our app.</li>
+            <li>Anonymous authentication ensures no personal identifiers are required.</li>
+            <li>We implement rate limiting to prevent abuse and unauthorized access.</li>
+        </ul>
+
+        <h3>4.3 Data Retention</h3>
+        <ul>
+            <li>Your photos remain stored in Firestore until you delete them from the app or delete your account.</li>
+            <li>Analytics and crash data are retained according to Firebase's retention policies (typically 60 days for raw data).</li>
+            <li>You can delete individual photos or all your data at any time from within the app.</li>
+        </ul>
+
+        <h2>5. Your Privacy Rights</h2>
+
+        <p>You have the following rights regarding your personal data:</p>
+        <ul>
+            <li><strong>Access:</strong> You can view all your stored photos within the app.</li>
+            <li><strong>Deletion:</strong> You can delete individual photos or all your data from the app settings.</li>
+            <li><strong>Opt-Out of Analytics:</strong> You can disable analytics tracking in your device settings.</li>
+            <li><strong>Notification Control:</strong> You can enable or disable push notifications in your device settings.</li>
+            <li><strong>Data Portability:</strong> Contact us to request a copy of your data in a portable format.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+
+        <p>Nailify is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will delete such information from our systems.</p>
+
+        <h2>7. International Data Transfers</h2>
+
+        <p>Your data may be processed and stored on servers located in various countries where Firebase, OpenRouter, fal.ai, and Supabase operate. By using Nailify, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection laws.</p>
+
+        <h2>8. California Privacy Rights (CCPA)</h2>
+
+        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li>Right to know what personal information we collect and how it is used</li>
+            <li>Right to request deletion of your personal information</li>
+            <li>Right to opt-out of the sale of personal information (Note: We do not sell your personal information)</li>
+            <li>Right to non-discrimination for exercising your privacy rights</li>
+        </ul>
+        <p>To exercise these rights, please contact us using the information below.</p>
+
+        <h2>9. European Privacy Rights (GDPR)</h2>
+
+        <p>If you are located in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):</p>
+        <ul>
+            <li>Right to access your personal data</li>
+            <li>Right to rectification of inaccurate data</li>
+            <li>Right to erasure ("right to be forgotten")</li>
+            <li>Right to restrict processing</li>
+            <li>Right to data portability</li>
+            <li>Right to object to processing</li>
+        </ul>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Posting the new Privacy Policy on this page</li>
+            <li>Updating the "Last Updated" date at the top</li>
+            <li>Sending an in-app notification for significant changes</li>
+        </ul>
+        <p>You are advised to review this Privacy Policy periodically for any changes. Changes are effective when posted on this page.</p>
+
+        <h2>11. Third-Party Links</h2>
+
+        <p>Nailify may contain links to third-party websites or services. We are not responsible for the privacy practices of these external sites. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+
+        <h2>12. Do Not Track</h2>
+
+        <p>Some browsers include a "Do Not Track" (DNT) feature. Our app does not currently respond to DNT signals due to the lack of industry-wide standards for interpreting DNT signals.</p>
+
+        <div class="contact-info">
+            <h2>13. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us at:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:nailifyteam@gmail.com">nailifyteam@gmail.com</a><br>
+                <strong>App Name:</strong> Nailify<br>
+                <strong>Developer:</strong> Güray Gül
+            </p>
+        </div>
+
+        <h2>14. Legal Basis for Processing (GDPR)</h2>
+        <p>For EEA users, our legal bases for processing your personal data are:</p>
+        <ul>
+            <li><strong>Consent:</strong> When you provide photos for AI analysis</li>
+            <li><strong>Contract:</strong> To provide the services you requested (nail analysis, try-on features)</li>
+            <li><strong>Legitimate Interest:</strong> To improve our app, prevent fraud, and ensure security</li>
+            <li><strong>Legal Obligation:</strong> To comply with applicable laws and regulations</li>
+        </ul>
+
+        <h2>15. Your Consent</h2>
+        <p>By using Nailify, you consent to our Privacy Policy and agree to its terms.</p>
+    </div>
+</body>
+</html>
